@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f0f0 !important;
+}
+
+.heading-font{
+    font-family: "El Messiri", serif;
+}
+
+.content-font{
+    font-family: "El Messiri", serif;
+}
+
+.menu-i-con{
+    cursor: pointer;
+}
+
+.my-nav{
+    box-shadow: 0 1px 1px 0px #ccc;
+}
+
+a.nav-link.active{
+    background-color: black;
+    color: white !important;
+}
+
+
+/* -----Header------ */
+#header{
+    width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+#header #parallex{
+    width: 100%;
+    margin-bottom: 0px;
+    height: 100%;
+    background-image: url("../image/mobile-4.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    position: relative;
+    z-index: 1000;
+    padding-top: 0px;
+}
+
+#parallex div{
+    width: 100%;
+    padding: 40px 100px;
+    padding-bottom: 10px;
+    background-color: #f0f0f0;
+}
+
+#parallex div p{
+    color: #797878;
+}
+
+#parallex img{
+    width: 100%;
+    height: fit-content;
+    display: none;
+}
+
+
+
+/* ------Services------ */
+#services{
+    width: 97%;
+    height: auto;
+    background-color: #f0f0f0;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.service-boxes{
+    padding: 20px;
+    
+}
+
+.service-boxes div{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ccc;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 10px 0px #ccc;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 20px;
+}
+
+.service-boxes h2{
+    font-size: 25px;
+}
+
+/* ------Clients------- */
+#client{
+    width: 100%;
+    padding: 150px 20px;
+    padding-bottom: 130px;
+    background-color: #fff;
+}
+
+.client-profile{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.client-sociel-icon{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #262626;
+    padding-top: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.client-sociel-icon:hover{
+    transform: translateY(-10px);
+    color: rgb(0, 179, 255);
+}
+
+.slide-icon i{
+    color: #5f5f5f;
+    font-size: 30px;
+}
+
+.slide-icon:hover i{
+    color: black;
+}
+
+/* ------Pricing----- */
+#pricing{
+    width: 100%;
+    height: auto;
+    padding: 100px 20px;
+    background-color: #f0f0f0;
+}
+
+.card-row{
+    margin-top: 40px;
+}
+
+.card{
+    transition: 0.5s !important;
+}
+
+.card:hover{
+    transform: translateY(-25px) !important;
+}
+
+/* --------Contant---------- */
+#contact{
+    height: auto;
+    padding-bottom: 5px !important;
+    margin-bottom: 0% !important;
+    margin-top: 0% !important;
+}
+
+.footer-address address{
+    color: #262626;
+    font-family: "El Messiri", serif;
+}
+
+
+
+/* --------Small Screen--------- */
+@media (max-width:768px){
+    .social-i-con{
+        display: flex !important;
+
+    }
+
+    #header{
+        padding-top: 80px;
+    }
+
+    #parallex div{
+        padding: 10px 20px;
+    }
+
+    #parallex div p{
+        text-align: justify;
+    }
+
+    #parallex img{
+        display: block;
+    }
+
+    #services{
+        margin-top: 0px;
+    }
+
+    .service-boxes p{
+        text-align: justify;
+    }
+
+    #card-2,#card-3{
+        margin-top: 30px;
+    }
+}
